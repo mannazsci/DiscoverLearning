@@ -24,9 +24,17 @@ This page shows off a notebook written in MyST Markdown.
 With MyST Markdown, you can define code cells with a directive like so:
 
 ```{code-cell}
+import ipywidgets as widgets
+from IPython.display import display
+w = widgets.IntSlider()
+display(w)
+```
+
+```{code-cell}
 print(2 + 2)
 ```
-```from IPython.display import HTML
+```{code-cell}
+from IPython.display import HTML
 # Youtube
 HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/74YrCK9ER5c?si=1xnPLqoLH4kQkPG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 ```
