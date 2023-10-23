@@ -10,9 +10,9 @@ The workshop will be in a flipped-classroom model, driven by participants' quest
 The workshop will be held over Zoom for a single day on the 4th of November 2023.
 
 Timings: 
-Session 1: 11 am - 1:30 pm
-Lunch break: 1.30 - 2.30 pm
-Session 2: 2.30 - 5.00 pm
+* Session 1: 11 am - 1:30 pm
+* Lunch break: 1.30 - 2.30 pm
+* Session 2: 2.30 - 5.00 pm
 
 We request that participants be available for the duration mentioned above.
 
