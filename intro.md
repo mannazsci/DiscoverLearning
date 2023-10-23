@@ -1,11 +1,22 @@
-# Welcome to your Jupyter Book
+# Welcome to Discover Learning
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Discover Learning is a platform for students to discover the neuroscience of behaviour and understand how we (humans) learn. In building this understanding, they will also learn to apply these principles to their personal and professional lives.
 
-Check out the content pages bundled with this sample book to see more.
+While the internet offers a lot of self-help advice for students, it is not typically backed by neuroscience. Through this workshop, participants will build a fundamental understanding of learning as a process and sift through the good and bad advice available to them.
+
+The workshop will be in a flipped-classroom model, driven by participants' questions and their explorations of the same. This is different from a traditional classroom model, where knowledge is mainly shared through lecturing. Because of the interactive student-driven nature of the workshop we do not have rigid learning outcomes, which means that everyone will be taking home something slightly different from the sessions - and that is perfectly fine!
+
+## Date & Venue:
+The workshop will be held over Zoom for a single day on the 4th of November 2023.
+
+Timings: 
+Session 1: 11 am - 1:30 pm
+Lunch break: 1.30 - 2.30 pm
+Session 2: 2.30 - 5.00 pm
+
+We request that participants be available for the duration mentioned above.
+
+Check out the content pages to see more.
 
 ```{tableofcontents}
 ```
