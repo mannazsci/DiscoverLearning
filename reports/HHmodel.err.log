@@ -15,10 +15,7 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
----
 tags: ["hide-input"]
----
-
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -39,10 +36,10 @@ def HH_model(C,Gna,Gk,Gleak):
   num_timepoints = t_end/dt;
   time    = int(num_timepoints);
 
-  C       = 1; # (muF/cm^2)
-  Gna     = 2.0; # (2mS/cm^2)
-  Gk      = 1.44; # (1.44mS/cm^2)
-  Gleak   = 0.2; # (0.2mS/cm^2)
+ # C       = 1; # (muF/cm^2)
+ # Gna     = 2.0; # (2mS/cm^2)
+ # Gk      = 1.44; # (1.44mS/cm^2)
+ # Gleak   = 0.2; # (0.2mS/cm^2)
 
 
   Ena     = 50.0; # (mV)
@@ -82,38 +79,72 @@ def HH_model(C,Gna,Gk,Gleak):
   plt.show
 
 
-interact(HH_model, C = widgets.FloatSlider(
+interact_manual(HH_model, C = widgets.FloatSlider(
     value=1.0,
     min=0.1,
     max=2.0,
     step=0.1,
+    continuous_update=False,
     description='membrane capacitance:'),
     Gna = widgets.FloatSlider(
     value=2.0,
     min=0.0,
     max=5.0,
     step=0.1,
+    continuous_update=False,
     description='Sodium conductance:'),
     Gk = widgets.FloatSlider(
     value=1.44,
     min=0.0,
     max=5.0,
     step=0.1,
+    continuous_update=False,
     description='Potassium conductance:'),
     Gleak = widgets.FloatSlider(
     value=0.2,
     min=0.0,
     max=1.0,
     step=0.1,
+    continuous_update=False,
     description='Leak conductance:')
 )
-
 ------------------
 
 
-[0;36m  Cell [0;32mIn[1], line 1[0;36m[0m
-[0;31m    ---[0m
-[0m       ^[0m
-[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[1], line 65[0m
+[1;32m     61[0m   plt[38;5;241m.[39mylim([38;5;241m-[39m[38;5;241m70[39m,);
+[1;32m     62[0m   plt[38;5;241m.[39mshow
+[0;32m---> 65[0m [43minteract_manual[49m(HH_model, C [38;5;241m=[39m widgets[38;5;241m.[39mFloatSlider(
+[1;32m     66[0m     value[38;5;241m=[39m[38;5;241m1.0[39m,
+[1;32m     67[0m     [38;5;28mmin[39m[38;5;241m=[39m[38;5;241m0.1[39m,
+[1;32m     68[0m     [38;5;28mmax[39m[38;5;241m=[39m[38;5;241m2.0[39m,
+[1;32m     69[0m     step[38;5;241m=[39m[38;5;241m0.1[39m,
+[1;32m     70[0m     continuous_update[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
+[1;32m     71[0m     description[38;5;241m=[39m[38;5;124m'[39m[38;5;124mmembrane capacitance:[39m[38;5;124m'[39m),
+[1;32m     72[0m     Gna [38;5;241m=[39m widgets[38;5;241m.[39mFloatSlider(
+[1;32m     73[0m     value[38;5;241m=[39m[38;5;241m2.0[39m,
+[1;32m     74[0m     [38;5;28mmin[39m[38;5;241m=[39m[38;5;241m0.0[39m,
+[1;32m     75[0m     [38;5;28mmax[39m[38;5;241m=[39m[38;5;241m5.0[39m,
+[1;32m     76[0m     step[38;5;241m=[39m[38;5;241m0.1[39m,
+[1;32m     77[0m     continuous_update[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
+[1;32m     78[0m     description[38;5;241m=[39m[38;5;124m'[39m[38;5;124mSodium conductance:[39m[38;5;124m'[39m),
+[1;32m     79[0m     Gk [38;5;241m=[39m widgets[38;5;241m.[39mFloatSlider(
+[1;32m     80[0m     value[38;5;241m=[39m[38;5;241m1.44[39m,
+[1;32m     81[0m     [38;5;28mmin[39m[38;5;241m=[39m[38;5;241m0.0[39m,
+[1;32m     82[0m     [38;5;28mmax[39m[38;5;241m=[39m[38;5;241m5.0[39m,
+[1;32m     83[0m     step[38;5;241m=[39m[38;5;241m0.1[39m,
+[1;32m     84[0m     continuous_update[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
+[1;32m     85[0m     description[38;5;241m=[39m[38;5;124m'[39m[38;5;124mPotassium conductance:[39m[38;5;124m'[39m),
+[1;32m     86[0m     Gleak [38;5;241m=[39m widgets[38;5;241m.[39mFloatSlider(
+[1;32m     87[0m     value[38;5;241m=[39m[38;5;241m0.2[39m,
+[1;32m     88[0m     [38;5;28mmin[39m[38;5;241m=[39m[38;5;241m0.0[39m,
+[1;32m     89[0m     [38;5;28mmax[39m[38;5;241m=[39m[38;5;241m1.0[39m,
+[1;32m     90[0m     step[38;5;241m=[39m[38;5;241m0.1[39m,
+[1;32m     91[0m     continuous_update[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
+[1;32m     92[0m     description[38;5;241m=[39m[38;5;124m'[39m[38;5;124mLeak conductance:[39m[38;5;124m'[39m)
+[1;32m     93[0m )
 
+[0;31mNameError[0m: name 'interact_manual' is not defined
 
