@@ -10,6 +10,8 @@ kernelspec:
   name: python3
 ---
 
+# Hodgkin-Huxley model
+
 ```{code-cell}
 :id: dK7zScO0yTTH
 
