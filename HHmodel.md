@@ -36,10 +36,10 @@ def HH_model(C,Gna,Gk,Gleak):
   num_timepoints = t_end/dt;
   time    = int(num_timepoints);
 
-  C       = 1; # (muF/cm^2)
-  Gna     = 2.0; # (2mS/cm^2)
-  Gk      = 1.44; # (1.44mS/cm^2)
-  Gleak   = 0.2; # (0.2mS/cm^2)
+ # C       = 1; # (muF/cm^2)
+ # Gna     = 2.0; # (2mS/cm^2)
+ # Gk      = 1.44; # (1.44mS/cm^2)
+ # Gleak   = 0.2; # (0.2mS/cm^2)
 
 
   Ena     = 50.0; # (mV)
@@ -79,31 +79,33 @@ def HH_model(C,Gna,Gk,Gleak):
   plt.show
 
 
-interact(HH_model, C = widgets.FloatSlider(
+interact_manual(HH_model, C = widgets.FloatSlider(
     value=1.0,
     min=0.1,
     max=2.0,
     step=0.1,
+    continuous_update=False,
     description='membrane capacitance:'),
     Gna = widgets.FloatSlider(
     value=2.0,
     min=0.0,
     max=5.0,
     step=0.1,
+    continuous_update=False,
     description='Sodium conductance:'),
     Gk = widgets.FloatSlider(
     value=1.44,
     min=0.0,
     max=5.0,
     step=0.1,
+    continuous_update=False,
     description='Potassium conductance:'),
     Gleak = widgets.FloatSlider(
     value=0.2,
     min=0.0,
     max=1.0,
     step=0.1,
+    continuous_update=False,
     description='Leak conductance:')
 )
-
-
 ```
