@@ -13,7 +13,10 @@ kernelspec:
 # Hodgkin-Huxley model
 
 ```{code-cell}
+---
 tags: ["hide-input"]
+---
+# a conductance-based example of the reduced hodgekin-huxley model
 
 import warnings
 warnings.filterwarnings('ignore')
