@@ -10,21 +10,17 @@ kernelspec:
   name: python3
 ---
 
-# Notebooks with MyST Markdown
+# Hodgkin-Huxley model
 
-Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.
-
-## An example cell
-
-With MyST Markdown, you can define code cells with a directive like so:
-
-```{code-cell} ipython3
+```{code-cell}
 ---
-tags: ["hide-input", "hide-output"]
+tags: ["hide-input"]
 ---
-# a conductance-based example of the reduced hodgekin-huxley model
+
+import warnings
+warnings.filterwarnings('ignore')
+
+
 !pip install interact --quiet
 !pip install interactive --quiet
 
@@ -41,7 +37,7 @@ def HH_model(C,Gna,Gk,Gleak):
   time    = int(num_timepoints);
 
   C       = 1; # (muF/cm^2)
-  Gna     = 2; # (2mS/cm^2) 
+  Gna     = 2.0; # (2mS/cm^2)
   Gk      = 1.44; # (1.44mS/cm^2)
   Gleak   = 0.2; # (0.2mS/cm^2)
 
@@ -66,22 +62,22 @@ def HH_model(C,Gna,Gk,Gleak):
       minf    = 1/(1+np.exp((-40.0-V[t-1])/km));
       ninf    = 1/(1+np.exp((Vn-V[t-1])/kn));
       h       = 0.89 - 1.1*n[t-1];
-      
+
       dvdt = (1/C)*(-Gna*minf**3*h*(V[t-1]-Ena) - Gk*n[t-1]**4*(V[t-1]-Ek) - Gleak*(V[t-1]-Eleak) + Iin);
       dndt = (1/tau)*(ninf - n[t-1]);
-      
+
       V[t] = V[t-1] + dvdt*dt;
       n[t] = n[t-1] + dndt*dt;
-  
+
   x = np.arange(0, time, 1, dtype=int);
 
-  plt.figure(1)
+  plt.figure()
   plt.plot(x,V)
   plt.ylabel('Voltage (mV)');
   plt.xlabel('Time (ms)');
-  plt.ylim(-70,20);
+  plt.ylim(-70,);
   plt.show
-              
+
 
 interact(HH_model, C = widgets.FloatSlider(
     value=1.0,
@@ -106,32 +102,8 @@ interact(HH_model, C = widgets.FloatSlider(
     min=0.0,
     max=1.0,
     step=0.1,
-    description='Leak conductance:')  
+    description='Leak conductance:')
 )
-```
 
-When your book is built, the contents of any `{code-cell}` blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.
 
-```{seealso}
-Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
-```
-
-## Create a notebook with MyST Markdown
-
-MyST Markdown notebooks are defined by two things:
-
-1. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-   See the YAML at the top of this page for example.
-2. The presence of `{code-cell}` directives, which will be executed with your book.
-
-That's all that is needed to get started!
-
-## Quickly add YAML metadata for MyST Notebooks
-
-If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
-
-```
-jupyter-book myst init path/to/markdownfile.md
 ```
