@@ -6,6 +6,15 @@ While the internet offers a lot of self-help advice for students, it is not typi
 
 The workshop will be in a flipped-classroom model, driven by participants' questions and their explorations of the same. This is different from a traditional classroom model, where knowledge is mainly shared through lecturing. Because of the interactive student-driven nature of the workshop we do not have rigid learning outcomes, which means that everyone will be taking home something slightly different from the sessions - and that is perfectly fine!
 
+```{code-cell}
+---
+tags: ["hide-cell"]
+---
+from IPython.display import HTML
+# Youtube
+HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/74YrCK9ER5c?si=1xnPLqoLH4kQkPG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+```
+
 ## Date & Venue:
 The workshop will be held over Zoom for a single day on the 4th of November 2023.
 
