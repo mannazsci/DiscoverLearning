@@ -5,4 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: Introduction to neuroscience
-- file: HHmodel.md
+- file: HHmodel.ipynb
