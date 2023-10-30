@@ -25,7 +25,7 @@ With MyST Markdown, you can define code cells with a directive like so:
 
 ```{code-cell} ipython3
 ---
-tags: ["hide-input"]
+tags: ["hide-input", "hide-output"]
 ---
 # a conductance-based example of the reduced hodgekin-huxley model
 !pip install interact --quiet
@@ -111,13 +111,6 @@ interact(HH_model, C = widgets.FloatSlider(
     step=0.1,
     description='Leak conductance:')  
 )
-```
-
-
-```{code-cell}
-from IPython.display import HTML
-# Youtube
-HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/74YrCK9ER5c?si=1xnPLqoLH4kQkPG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 ```
 
 When your book is built, the contents of any `{code-cell}` blocks will be
