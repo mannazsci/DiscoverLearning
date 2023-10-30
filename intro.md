@@ -38,7 +38,6 @@ The workshop will be held over Zoom for a single day on the 4th of November 2023
 
 Timings: 
 * Session 1: 11 am - 1:30 pm
-  Topics will include: 
   - Neuroscience of Learning 
   - The joy and pain of learning
   - The Bayesian brain
@@ -49,7 +48,6 @@ Timings:
 
   
 * Session 2: 2.30 - 5.00 pm
-  Topics will include:
   - The scientific method
   - Critical thinking - cognitive biases and logical fallacies
   - Ableism in education and neurodiversity awareness
