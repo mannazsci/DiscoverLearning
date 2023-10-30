@@ -13,14 +13,16 @@ kernelspec:
 # Hodgkin-Huxley model
 
 ```{code-cell}
-:id: dK7zScO0yTTH
+---
+tags: ["hide-input"]
+---
 
-!pip install interact
-!pip install interactive
-```
+import warnings
+warnings.filterwarnings('ignore')
 
-```{code-cell}
-:id: k-ve-uW4j3Q6
+
+!pip install interact --quiet
+!pip install interactive --quiet
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -102,8 +104,6 @@ interact(HH_model, C = widgets.FloatSlider(
     step=0.1,
     description='Leak conductance:')
 )
-
-
 
 
 ```
