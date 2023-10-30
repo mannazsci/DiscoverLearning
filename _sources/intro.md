@@ -38,8 +38,19 @@ The workshop will be held over Zoom for a single day on the 4th of November 2023
 
 Timings: 
 * Session 1: 11 am - 1:30 pm
+  - Neuroscience of Learning 
+  - The joy and pain of learning
+  - The Bayesian brain
+  - Forms of learning
+
+ 
 * Lunch break: 1.30 - 2.30 pm
+
+  
 * Session 2: 2.30 - 5.00 pm
+  - The scientific method
+  - Critical thinking - cognitive biases and logical fallacies
+  - Ableism in education and neurodiversity awareness
 
 We request that participants be available for the duration mentioned above.
 
