@@ -1,3 +1,19 @@
+---
+jupytext:
+  cell_metadata_filter: -all
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.15.2
+kernelspec:
+  display_name: Python 3 (ipykernel)
+  language: python
+  name: python3
+---
+
+
 # Welcome to Discover Learning
 
 Discover Learning is a platform for students to discover the neuroscience of behaviour and understand how we (humans) learn. In building this understanding, they will also learn to apply these principles to their personal and professional lives.
@@ -8,9 +24,11 @@ The workshop will be in a flipped-classroom model, driven by participants' quest
 
 ```{code-cell}
 ---
-tags: ["hide-cell"]
+tags: ["hide-input"]
 ---
 from IPython.display import HTML
+import warnings
+warnings.filterwarnings('ignore')
 # Youtube
 HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/74YrCK9ER5c?si=1xnPLqoLH4kQkPG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 ```
