@@ -23,13 +23,10 @@ This page shows off a notebook written in MyST Markdown.
 
 With MyST Markdown, you can define code cells with a directive like so:
 
-```{code-cell}
-{
-    "tags": [
-        "hide-input"
-    ]
-}
-
+```{code-cell} ipython3
+---
+tags: ["hide-input"]
+---
 # a conductance-based example of the reduced hodgekin-huxley model
 !pip install interact --quiet
 !pip install interactive --quiet
