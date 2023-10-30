@@ -6,9 +6,9 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.11.5
+    jupytext_version: 1.15.2
 kernelspec:
-  display_name: Python 3
+  display_name: Python 3 (ipykernel)
   language: python
   name: python3
 ---
@@ -111,7 +111,6 @@ interact(HH_model, C = widgets.FloatSlider(
 ```
 
 ```{code-cell}
-
 # a conductance-based example of the reduced hodgekin-huxley model
 !pip install interact --quiet
 !pip install interactive --quiet
@@ -197,8 +196,8 @@ interact(HH_model, C = widgets.FloatSlider(
     description='Leak conductance:')  
 )
 
-
 ```
+
 ```{code-cell}
 from IPython.display import HTML
 # Youtube
