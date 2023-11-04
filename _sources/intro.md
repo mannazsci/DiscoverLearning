@@ -24,7 +24,7 @@ The workshop will be in a flipped-classroom model, driven by participants' quest
 
 ```{code-cell}
 ---
-tags: ["hide-input"]
+tags: ["remove-input"]
 ---
 from IPython.display import HTML
 import warnings
@@ -53,8 +53,3 @@ Timings:
   - Ableism in education and neurodiversity awareness
 
 We request that participants be available for the duration mentioned above.
-
-Check out the content pages to see more.
-
-```{tableofcontents}
-```

@@ -1,0 +1,10 @@
+@media (min-width: 768px) 
+#main-content {     
+    max-width: 70%; 
+}
+
+@media (min-width: 720px) 
+.col-md-3 {     
+    flex: 0 0 45%;     
+    max-width: 45%; 
+}
