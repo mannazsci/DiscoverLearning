@@ -7,8 +7,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Discover Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>BONUS: How neurons encode information about the world &#8212; Discover Learning</title>
   
   
   
@@ -60,9 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Bonus_HW';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The Neural Basis of Learning" href="Neural_basis_learning.html" />
+    <link rel="prev" title="Hodgkin-Huxley model" href="HHmodel.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,11 +157,11 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Session 1</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="discover_learning.html">Let’s discover learning!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Introduction%20to%20neuroscience.html">Introduction to Neuroscience</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HHmodel.html">Hodgkin-Huxley model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Bonus_HW.html">BONUS: How neurons encode information about the world</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">BONUS: How neurons encode information about the world</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Neural_basis_learning.html">The Neural Basis of Learning</a></li>
 
 </ul>
@@ -211,6 +214,54 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Bonus_HW.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
   title="Fullscreen mode"
@@ -253,7 +304,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>BONUS: How neurons encode information about the world</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -267,13 +318,34 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="bonus-how-neurons-encode-information-about-the-world">
+<h1>BONUS: How neurons encode information about the world<a class="headerlink" href="#bonus-how-neurons-encode-information-about-the-world" title="Permalink to this heading">#</a></h1>
+<p>People who study perceptual neuroscience often ask questions such as “what kind of stimulus would cause this neuron to fire action potentials?” This is often a good question, because many neurons in sensory and perceptual areas of the brain respond to specific external stimuli by firing action potentials (sudden ‘spikes’ or jumps in the membrane potential).</p>
+<p>The video below is about a pioneering study in visual neuroscience where an electrode was inserted into a cat’s visual cortex as the animal is staring at stimuli shown on a screen. Listen for popping sounds in the audio at around 0:50 (50 seconds after video begins). The popping sound is because of action potentials fired by a neuron that responds to the moving linear edge of the display slide.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IOHayh06LJ4?si=B0U3i6Iqih6RxxEJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Neurons are also known to store other kinds of information through action potentials, such as information from other senses and movement signals, to name a few. A key principle underlying our modern understanding of how neurons store and convey information is <strong>distributed coding</strong>. This means that it is not individual neurons that code for specific concepts, memories, or behaviors, but an entire sets of neurons that are often widely distributed.</p>
+<p>It turns out that many neurons can also encode information without using action potentials. These neurons are typically harder to analyze and study.</p>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -286,6 +358,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="HHmodel.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Hodgkin-Huxley model</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Neural_basis_learning.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The Neural Basis of Learning</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>

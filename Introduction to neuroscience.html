@@ -35,7 +35,6 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/customizations.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -65,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Introduction to neuroscience';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="What happens when you stimulate a neuron?" href="stimulate_neuron_widgets.html" />
+    <link rel="next" title="Hodgkin-Huxley model" href="HHmodel.html" />
     <link rel="prev" title="Let’s discover learning!" href="discover_learning.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -157,11 +156,20 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Session 1</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="discover_learning.html">Let’s discover learning!</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to Neuroscience</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stimulate_neuron_widgets.html">What happens when you stimulate a neuron?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HHmodel.html">Hodgkin-Huxley model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bonus_HW.html">BONUS: How neurons encode information about the world</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Neural_basis_learning.html">The Neural Basis of Learning</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Session 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="joy_pain.html">Motivation</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Bayes.html">Uncertainty and the Bayesian Brain</a></li>
 </ul>
 
     </div>
@@ -285,7 +293,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -301,6 +311,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-happens-when-you-stimulate-a-neuron">What happens when you stimulate a neuron?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -312,7 +330,13 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-neuroscience">
 <h1>Introduction to Neuroscience<a class="headerlink" href="#introduction-to-neuroscience" title="Permalink to this heading">#</a></h1>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZXf1cvOBTOqe3hfWPf7DzI_wKCgFLv93y-0sUPQ9L4PBlHJs54jB0ClS-B_WUr6SN1jzyy1Rx1wkv/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></section>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZXf1cvOBTOqe3hfWPf7DzI_wKCgFLv93y-0sUPQ9L4PBlHJs54jB0ClS-B_WUr6SN1jzyy1Rx1wkv/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<section id="what-happens-when-you-stimulate-a-neuron">
+<h2>What happens when you stimulate a neuron?<a class="headerlink" href="#what-happens-when-you-stimulate-a-neuron" title="Permalink to this heading">#</a></h2>
+<p><a href="https://phet.colorado.edu/sims/html/neuron/latest/neuron_en.html">Let’s try a simulation!</a></p>
+<p>Try to be observant!</p>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -355,11 +379,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="stimulate_neuron_widgets.html"
+       href="HHmodel.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">What happens when you stimulate a neuron?</p>
+        <p class="prev-next-title">Hodgkin-Huxley model</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -372,6 +396,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-happens-when-you-stimulate-a-neuron">What happens when you stimulate a neuron?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

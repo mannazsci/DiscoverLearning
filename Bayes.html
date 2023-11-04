@@ -7,8 +7,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Discover Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Uncertainty and the Bayesian Brain &#8212; Discover Learning</title>
   
   
   
@@ -60,9 +61,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Bayes';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Motivation" href="joy_pain.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,10 +165,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Session 2</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="joy_pain.html">Motivation</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="Bayes.html">Uncertainty and the Bayesian Brain</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Uncertainty and the Bayesian Brain</a></li>
 </ul>
 
     </div>
@@ -211,6 +213,54 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Bayes.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
   title="Fullscreen mode"
@@ -242,7 +292,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -253,11 +305,32 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Uncertainty and the Bayesian Brain</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refresher-bayesian-reasoning">Refresher: Bayesian Reasoning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-discussion">Activity/Discussion:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#judgements-under-uncertainty-ambiguous-motion">Judgements under uncertainty:  Ambiguous Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video-the-bayesian-brain">Video: The Bayesian Brain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Discussion:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ethics-of-bias">The Ethics of Bias</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Discussion:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -267,13 +340,73 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="uncertainty-and-the-bayesian-brain">
+<h1>Uncertainty and the Bayesian Brain<a class="headerlink" href="#uncertainty-and-the-bayesian-brain" title="Permalink to this heading">#</a></h1>
+<section id="discussion">
+<h2>Discussion:<a class="headerlink" href="#discussion" title="Permalink to this heading">#</a></h2>
+<p>What is common about the following sentences:</p>
+<ul class="simple">
+<li><p>Sinduja is always late for parties.</p></li>
+<li><p>It usually rains very heavily here in the first week of July.</p></li>
+<li><p>Our team never wins when we start to lose wickets early.</p></li>
+<li><p>In English words, ‘i’ always comes after ‘e’ except after ‘c’ or when pronounced as ‘AY’ such as in ‘neigh’ or ‘weigh’</p></li>
+</ul>
+<p><br><br><br><br><br><br><br><br><br><br><br></p>
+<section id="refresher-bayesian-reasoning">
+<h3>Refresher: Bayesian Reasoning<a class="headerlink" href="#refresher-bayesian-reasoning" title="Permalink to this heading">#</a></h3>
+<p><img alt="bayes" src="_images/bayes_formula.png" /></p>
+</section>
+<section id="activity-discussion">
+<h3>Activity/Discussion:<a class="headerlink" href="#activity-discussion" title="Permalink to this heading">#</a></h3>
+<p>A doctor faced with a patient having a cough (D = Data) has to make a decision about the most likely cause for the symptoms from three hypotheses: a lung cancer (H1), a cold (H2) or gastroenteritis (H3). How would you try and approach this problem?</p>
+</section>
+</section>
+<section id="judgements-under-uncertainty-ambiguous-motion">
+<h2>Judgements under uncertainty:  Ambiguous Motion<a class="headerlink" href="#judgements-under-uncertainty-ambiguous-motion" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://michaelbach.de/ot/mot-sam/">https://michaelbach.de/ot/mot-sam/</a>
+<br><br><br><br><br><br><br><br><br><br><br></p>
+</section>
+<section id="video-the-bayesian-brain">
+<h2>Video: The Bayesian Brain<a class="headerlink" href="#video-the-bayesian-brain" title="Permalink to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Iv1168I8j94?si=CE2mHYW2ii697YDJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<section id="id1">
+<h3>Discussion:<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>When can making predictions be a bad thing?</p>
+</section>
+</section>
+<section id="the-ethics-of-bias">
+<h2>The Ethics of Bias<a class="headerlink" href="#the-ethics-of-bias" title="Permalink to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LNNK2gGvkWc?si=DbM5MwI7ZjKykyDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<section id="id2">
+<h3>Discussion:<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Are some kinds of biases essential to make decisions? When must we be wary of our biases?</p></li>
+<li><p>The Hindi sentence “Wo doctor hai.” is a gender-neutral way to say “that person is a doctor.” Similarly “Wo nurse hai.” is a gender-neutral way to say “that person is a nurse.” Yet entering these sentences in google translate gives the results shown below. Why might this be the case? Would you say this is acceptable?</p></li>
+</ol>
+<p><img alt="Bias" src="_images/googleBias.png" /></p>
+</section>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -286,6 +419,15 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="joy_pain.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Motivation</p>
+      </div>
+    </a>
 </div></div>
   
 </div>
@@ -295,6 +437,33 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refresher-bayesian-reasoning">Refresher: Bayesian Reasoning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-discussion">Activity/Discussion:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#judgements-under-uncertainty-ambiguous-motion">Judgements under uncertainty:  Ambiguous Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video-the-bayesian-brain">Video: The Bayesian Brain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Discussion:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ethics-of-bias">The Ethics of Bias</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Discussion:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

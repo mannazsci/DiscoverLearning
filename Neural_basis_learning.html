@@ -35,7 +35,6 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/customizations.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -65,7 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Neural_basis_learning';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Hodgkin-Huxley model" href="HHmodel.html" />
+    <link rel="next" title="Motivation" href="joy_pain.html" />
+    <link rel="prev" title="BONUS: How neurons encode information about the world" href="Bonus_HW.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -160,9 +160,16 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="discover_learning.html">Let’s discover learning!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Introduction%20to%20neuroscience.html">Introduction to Neuroscience</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stimulate_neuron_widgets.html">What happens when you stimulate a neuron?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HHmodel.html">Hodgkin-Huxley model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bonus_HW.html">BONUS: How neurons encode information about the world</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">The Neural Basis of Learning</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Session 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="joy_pain.html">Motivation</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Bayes.html">Uncertainty and the Bayesian Brain</a></li>
 </ul>
 
     </div>
@@ -309,12 +316,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The Neural Basis of Learning</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#synapses-connections-that-define-us">Synapses - Connections that define us</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-hebbian-principle">The Hebbian Principle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#associative-learning">Associative Learning</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#associative-learning">Associative Learning</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predicting-associations-in-the-world">Predicting Associations in the World</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-correlations-in-the-wild">Discussion - Correlations in the Wild</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -338,7 +351,7 @@ document.write(`
 <!--
 ## Discussion
 
-We will now be addressing the topic of how our brains and their constituent neurons change when we learn things.
+We will now be addressing the topic of how our brains and their constitutent neurons change when we learn things.
 Have you heard the phrase "cells that fire together, wire together"? What could this mean?
 
 <br>
@@ -356,9 +369,9 @@ Have you heard the phrase "cells that fire together, wire together"? What could 
 <p>It’s important to note that each neuron has hundreds to thousands of connections with other neurons. Therefore, the firing of each neuron depends on and influences the firing of many other neurons. In rare cases, the firing of an individual neuron can have a very strong stimulating influence on the firing of another neuron that receives signal from it. Such a situation could lead to synaptic strengthening between these neurons, since they are likely to fire together (i.e. in quick succession) a lot.</p>
 <p>Hebbian learning can explain many phenomena related to learning, such as pattern recognition and associative memory.</p>
 </section>
-<section id="associative-learning">
-<h2>Associative Learning<a class="headerlink" href="#associative-learning" title="Permalink to this heading">#</a></h2>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="associative-learning">
+<h1>Associative Learning<a class="headerlink" href="#associative-learning" title="Permalink to this heading">#</a></h1>
 <section id="predicting-associations-in-the-world">
 <h2>Predicting Associations in the World<a class="headerlink" href="#predicting-associations-in-the-world" title="Permalink to this heading">#</a></h2>
 <p>It turns out that the process of learning many of the important skills in life has one thing in common: the ability to make predictions. For example, every time you make or buy food, you make a prediction about how much you are likely to eat based on how hungry you are, and your own understanding of your appetite. The better your prediction, the less likely you are to feel unsatisfied or waste food at the end of your meal. You might have refrained from making light-hearted fun of a friend when you knew that they were having a bad day. Here again, you made a prediction - this time you predicted how your friend would react based on what you could say to them.</p>
@@ -371,9 +384,11 @@ If event A happens, event B will also happen.</p>
 <h2>Discussion - Correlations in the Wild<a class="headerlink" href="#discussion-correlations-in-the-wild" title="Permalink to this heading">#</a></h2>
 <p>A social scientist walks up to a mic in a public talk and says, “Our data suggests that people who actively use social networking sites have more friends than people who don’t. Therefore we conclude that using social media helps build and nurture friendships and real-life connections with people.”</p>
 <p>Is this person justified in their inference?</p>
+<p><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br></p>
 <p>Let’s try one more.
 The plot below shows how ice-cream sales in a city varied across the year in purple. Plotted also alongside are number of drownings recorded at a particular beach (in different units of course) in the same city. Are people drowning because of all the ice cream?</p>
-<p><img alt="Ice cream sales vs no. of drownings" src="_images/drowningsvsIceCream.jpg" /></p>
+<p><img alt="drowning" src="_images/drowningsvsIceCream.jpg" /></p>
 </section>
 </section>
 
@@ -409,13 +424,22 @@ The plot below shows how ice-cream sales in a city varied across the year in pur
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="HHmodel.html"
+       href="Bonus_HW.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Hodgkin-Huxley model</p>
+        <p class="prev-next-title">BONUS: How neurons encode information about the world</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="joy_pain.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Motivation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -435,12 +459,18 @@ The plot below shows how ice-cream sales in a city varied across the year in pur
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The Neural Basis of Learning</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#synapses-connections-that-define-us">Synapses - Connections that define us</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-hebbian-principle">The Hebbian Principle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#associative-learning">Associative Learning</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#associative-learning">Associative Learning</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predicting-associations-in-the-world">Predicting Associations in the World</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-correlations-in-the-wild">Discussion - Correlations in the Wild</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

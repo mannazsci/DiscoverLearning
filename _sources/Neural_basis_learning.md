@@ -32,7 +32,7 @@ The modern neuroscientific study of learning is incomplete without looking at sy
 <!--
 ## Discussion
 
-We will now be addressing the topic of how our brains and their constituent neurons change when we learn things.
+We will now be addressing the topic of how our brains and their constitutent neurons change when we learn things.
 Have you heard the phrase "cells that fire together, wire together"? What could this mean?
 
 <br>
@@ -54,7 +54,7 @@ It's important to note that each neuron has hundreds to thousands of connections
 Hebbian learning can explain many phenomena related to learning, such as pattern recognition and associative memory.
 
 
-## Associative Learning
+# Associative Learning
 
 
 ## Predicting Associations in the World
@@ -77,47 +77,11 @@ A social scientist walks up to a mic in a public talk and says, "Our data sugges
 Is this person justified in their inference?
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
 Let's try one more.
 The plot below shows how ice-cream sales in a city varied across the year in purple. Plotted also alongside are number of drownings recorded at a particular beach (in different units of course) in the same city. Are people drowning because of all the ice cream?
 
 
-![Ice cream sales vs no. of drownings](drowningsvsIceCream.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![drowning](drowningsvsIceCream.jpg)
